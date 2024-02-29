@@ -1,0 +1,55 @@
+/* splash screen end */
+
+.main>*:first-child {
+    margin-top: 0;
+}
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* This will vertically center the slider */
+    height: 80vh;
+    /* Adjust this value based on the total height of nav + footer */
+    margin: auto;
+}
+
+/* Add some padding at the top and bottom of the body to make sure it doesn't overlap with the nav and footer */
+.pageBody {
+    padding-bottom: 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+#loadingText {
+    text-align: center;
+    color: black;
+
+}
+
+.imageSlider {
+    position: relative;
+    width: 850px;
+    height: 600px;
+    border: 15px white solid;
+    border-radius: 0px;
+}
+
+.slider-image {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* Overlay images directly */
+    top: 0;
+    left: 0;
+}
+
+.slider-image.active {
+    opacity: 1;
+}

@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+    /* Ensures the full height is used */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    text-align: right;
+    margin-top: 0;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.navbarText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbarLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* footer */
+
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
