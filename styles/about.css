@@ -1,0 +1,22 @@
+.pageBody {
+    padding-bottom: 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e2e2e2;
+}
+
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 10px 1px rgb(212, 212, 212);
+}
