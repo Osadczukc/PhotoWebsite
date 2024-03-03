@@ -6,3 +6,117 @@
     justify-content: center;
     background-color: #e2e2e2;
 }
+
+.gallery-container {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    min-height: 640px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.gallery img {
+    transition: opacity 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white background */
+    color: #333;
+    /* Text color */
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.image-container:fullscreen img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.image-container img {
+    height: 200px;
+    width: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.image-container:hover .gallery img:hover+.overlay {
+    display: flex;
+}
+
+.overlay-content {
+    display: none;
+    /* Initially hidden */
+}
+
+.image-container:hover .overlay .overlay-content {
+    display: block;
+    /* Display when parent is hovered */
+}
+
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#play-pause-button {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    /* Background color for the play button */
+    text-align: center;
+    /* Center text horizontally */
+    line-height: 1;
+    /* Center text vertically */
+    max-width: 50px;
+    margin: 10px auto;
+}
+
+#play-pause-button:hover {
+    background-color: #f0f0f0;
+    /* Hover background color for the play button */
+}
